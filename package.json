@@ -1,0 +1,22 @@
+{
+  "name": "cypress-workshop",
+  "version": "1.0.0",
+  "description": "A brief Cypress workshop, introducing test organisation principles and key Cypress commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rightsaidjames/cypress-workshop.git"
+  },
+  "author": "James Sheasby Thomas (@RightSaidJames)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rightsaidjames/cypress-workshop/issues"
+  },
+  "homepage": "https://github.com/rightsaidjames/cypress-workshop#readme",
+  "devDependencies": {
+    "cypress": "^7.5.0"
+  }
+}
