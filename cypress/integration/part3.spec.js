@@ -1,7 +1,7 @@
 describe('Workshop Part 3', () => {
 
   it('Navigates to PDP, adds to cart, then enters checkout', () => {
-    cy.visit('/')
+    cy.visit('/index.php', { failOnStatusCode: false })
 
     // Navigate to PDP from homepage
 
