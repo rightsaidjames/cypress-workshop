@@ -18,6 +18,12 @@ If not, you can download and install the LTS version from the [Node.js website](
 
 If your current version of Node is quite old, you can install the current LTS version using the link above. If you installed it using Homebrew, you can upgrade it using the command `brew upgrade node`.
 
+If you don't already have a directory for storing projects cloned from Git, create one in your home directory using the `mkdir` command. For example, to create a `projects` directory (then navigate to it) open a new Terminal window/tab then run these commands:
+```
+mkdir projects
+cd projects
+```
+
 Next, clone this repository, navigate to its root directory, then install Cypress and its dependencies:
 ```
 git clone https://github.com/rightsaidjames/cypress-workshop.git
@@ -45,6 +51,11 @@ During these exercises, the main Cypress commands you'll be using are:
 * [cy.type()](https://docs.cypress.io/api/commands/type) to type into a form field. Use [cy.clear()](https://docs.cypress.io/api/commands/clear) to clear an input field that already has a value.
 * [cy.select()](https://docs.cypress.io/api/commands/select) to select an option from a dropdown menu. You can specify the machine name (the text within the `value` HTML attribute) or a text label.
 * [cy.should()](https://docs.cypress.io/api/commands/should) to make assertions. `.should()` can be chained off almost any command, enabling you to make assertions on the state of an element after you've interacted with it. Read the [Assertions guide](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress#Assertions) to learn more about writing assertions.
-* [cy.its()](https://docs.cypress.io/api/commands/its) to get the property of an element, typically used for making assertions on the result of a previous command. For example, `cy.get('h1').its('length').should('eql', 1)` would assert that only one H1 element was found by the `cy.get('h1')` command.
+* [cy.its()](https://docs.cypress.io/api/commands/its) to get a specific property returned by the preceding Cypress command, typically used for making assertions. For example, `cy.get('h1').its('length').should('eql', 1)` would assert that only one H1 element was found by the `cy.get('h1')` command.
 
 You can find the [full list of commands](https://docs.cypress.io/api/table-of-contents) in the Cypress Docs.
+
+### Additional Resources
+
+* [Introduction to Cypress - Test Automation University](https://testautomationu.applitools.com/cypress-tutorial/)
+* [Filip Hric's Cypress blog](https://filiphric.com/blog) - search for `basics` to find his Cypress basics series.
